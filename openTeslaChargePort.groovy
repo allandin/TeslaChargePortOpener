@@ -19,16 +19,12 @@ definition(
     author: "Allan Skipper",
     description: "Opens the chargeport of your Tesla, when contact sensor registers as open.",
     category: "My Apps",
-    iconUrl: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience.png",
-    iconX2Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png",
-    iconX3Url: "https://s3.amazonaws.com/smartapp-icons/Convenience/Cat-Convenience@2x.png") {
+    iconUrl: "https://img.icons8.com/color/48/000000/tesla-logo.png",
+    iconX2Url: "https://img.icons8.com/color/48/000000/tesla-logo.png",
+    iconX3Url: "https://img.icons8.com/color/48/000000/tesla-logo.png") {
     appSetting "TESLA_CLIENT_ID"
     appSetting "TESLA_CLIENT_SECRET"    
 }
-
-//TODO: Wanna-be: Gem access_token til brug senere. Forny den automatisk på en eller anden måde.
-//		Brug 'state' til at gemme, se https://docs.smartthings.com/en/latest/smartapp-developers-guide/state.html
-
 
 preferences {
     page(name: "settings")
